@@ -1,0 +1,35 @@
+---
+import Container from "@components/container.astro";
+import Layout from "@layouts/Layout.astro";
+import Features from "@components/features.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Contactform from "@components/contactform.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="CRM Dinámicos para Empresas">
+  <Container>
+    <Hero>
+      <Fragment slot="title">Digitaliza tu empresa con un CRM a medida</Fragment>
+      <Fragment slot="desc">Creación de sistemas CRM dinámicos para gestión de clientes, facturación, procesos internos y más. Moderniza tu negocio y lleva la eficiencia al siguiente nivel.</Fragment>
+    </Hero>
+
+    <Features>
+      <Fragment slot="title">Todo lo que necesitas para digitalizar tu negocio</Fragment>
+      <Fragment slot="desc">Soluciones modulares y 100% personalizables</Fragment>
+    </Features>
+
+    <Logos />
+
+    <section id="contact" class="mt-24">
+      <Sectionhead>
+        <Fragment slot="title">Solicita tu CRM a medida</Fragment>
+        <Fragment slot="desc">Un asesor se pondrá en contacto contigo para analizar tus necesidades.</Fragment>
+      </Sectionhead>
+      <div class="mt-12 max-w-3xl mx-auto">
+        <Contactform />
+      </div>
+    </section>
+  </Container>
+</Layout>

@@ -1,0 +1,68 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Gestión de Clientes 360º",
+    description:
+      "Centraliza todos los datos de tus clientes y mejora la toma de decisiones.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Automatización de Procesos",
+    description:
+      "Ahorra tiempo y reduce errores con flujos de trabajo automatizados.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Facturación Inteligente",
+    description:
+      "Emite, organiza y controla facturas de manera rápida y sencilla.",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "CRM Modular",
+    description:
+      "Elige los módulos que necesitas: ventas, soporte, proyectos, marketing, etc.",
+    icon: "bx:bxs-bot",
+  },
+  {
+    title: "Escalabilidad garantizada",
+    description:
+      "Nuestro CRM crece contigo, sin límites.",
+    icon: "bx:bxs-file-find",
+  },
+  {
+    title: "Integraciones fáciles",
+    description:
+      "Conecta con tus herramientas actuales (ERP, email marketing, contabilidad...).",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Todo lo que necesitas para gestionar y hacer crecer tu empresa
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Digitalizamos la relación con tus clientes, automatizamos tus procesos y optimizamos tu facturación con sistemas CRM flexibles, escalables y personalizados.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>

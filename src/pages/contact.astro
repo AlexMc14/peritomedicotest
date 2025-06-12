@@ -1,0 +1,28 @@
+---
+import Contactform from "@components/contactform.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Contact">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Contacto</Fragment>
+      <Fragment slot="desc">¿Necesitas ayuda? Rellena el formulario.</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl text-gray-800">Contacto crms</h2>
+        <p class="text-lg leading-relaxed text-slate-500 mt-3">
+          ¿Tienes algo que decir? Estamos aquí para ayudarte. Completa el formulario, envía un correo electrónico o llámanos.
+        </p>
+      </div>
+      <div>
+        <Contactform />
+      </div>
+    </div>
+  </Container>
+</Layout>
