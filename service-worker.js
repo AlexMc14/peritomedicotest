@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/peritomedicotest/precache-manifest.73a651c4cc1c912b54ffc491fa03cb94.js"
+  "/peritomedicotest/precache-manifest.6b7788697155a5f2ee62d10163b5e750.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "Informes-Medicos-Periciales"});
